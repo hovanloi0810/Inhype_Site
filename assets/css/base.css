@@ -1,0 +1,49 @@
+:root {
+    --text-color: #333;
+    --black-color: #000;
+    --white-color: #fff; 
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5em;
+}
+
+a.p-l-0 {
+    padding-left: 0;
+}
+
+a.p-r-0 {
+    padding-right: 0;
+}
+
+.btn {
+    height: 46px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    min-width: 134px;
+    border-radius: 4px;
+    padding: 12px 30px;
+}
+
+.btn:hover {
+    background-color: #48494b;
+    color: var(--white-color);
+}
+
+.btn--pink {
+    background-color: #ff3366;
+}
