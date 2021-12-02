@@ -2,6 +2,9 @@
     --text-color: #333;
     --black-color: #000;
     --white-color: #fff; 
+    --hover-color: #2568ef;
+    --pink-color: #ff3366;
+    --blue-color: #2b44ff;
 }
 
 * {
@@ -15,13 +18,10 @@ html {
     line-height: 1.5em;
 }
 
-a.p-l-0 {
-    padding-left: 0;
+.m-l-10 {
+    margin-left: 10px;
 }
 
-a.p-r-0 {
-    padding-right: 0;
-}
 
 .btn {
     height: 46px;
@@ -37,6 +37,7 @@ a.p-r-0 {
     min-width: 134px;
     border-radius: 4px;
     padding: 12px 30px;
+    transition: .3s;
 }
 
 .btn:hover {
@@ -45,5 +46,99 @@ a.p-r-0 {
 }
 
 .btn--pink {
-    background-color: #ff3366;
+    background-color: var(--pink-color);
+}
+
+.btn-sup {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding: 4px 6px;
+    text-align: left;
+    margin-left: 8px;
+    top: 100%;
+    border-radius: 6px;
+}
+
+.btn-sup--pink {
+    background-color: var(--pink-color);
+}
+
+.btn-sup--blue {
+    background-color: var(--blue-color);
+}
+
+.info__cate {
+    display: inline-block;
+    height: 28px;
+    background-color: var(--white-color);
+    margin-bottom: 11px;
+}
+
+.info__cate-double {
+    display: flex;
+    margin-bottom: 11px;
+
+}
+
+.info__cate-link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    border: 1px solid #e0dede;
+    border-radius: 30px;
+    color: var(--text-color);
+    transition: .3s;
+}
+
+.info__cate-link:hover {
+    color: var(--hover-color);
+}
+
+.cate-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    display: block;
+    line-height: 26px;
+    height: 26px;   
+    margin-left: 24px;
+}
+
+.cate-dot {
+    display: block;
+    position: absolute;
+    background-color: #676767;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    line-height: 26px;
+}
+
+.cate-dot--violet {
+    background-color: #994db1;
+}
+
+.cate-dot--blue {
+    background-color: #2590ed;
+}
+
+.cate-dot--darkblue {
+    background-color: #0d30c3;
+}
+
+.cate-dot--pink {
+    background-color: #c74970;
+}
+
+.cate-dot--orange {
+    background-color: #ed7e4f;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0;}
+    to { opacity: 1;}
 }
