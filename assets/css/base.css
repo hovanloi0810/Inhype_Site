@@ -8,6 +8,8 @@
     --button-color: #2668ef;
     --slider-height: 640px;
     --border-color: #e0dede;
+    --img-height-big: 568px;
+    --img-height-small: 232px;
 }
 
 * {
@@ -29,6 +31,18 @@ html {
     margin-bottom: 8px;
 }
 
+.m-b-15 {
+    margin-bottom: 15px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.m-t-40 {
+    margin-top: 40px;
+}
+
 .btn {
     height: 46px;
     text-decoration: none;
@@ -41,9 +55,10 @@ html {
     border: none;
     outline: none;
     min-width: 134px;
-    border-radius: 4px;
+    border-radius: 6px;
     padding: 12px 30px;
     transition: .3s;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -55,7 +70,7 @@ html {
     background-color: var(--pink-color);
 }
 
-.btn--load-more {
+.btn--primary {
     background-color: var(--button-color);
 }
 
@@ -77,6 +92,10 @@ html {
 
 .btn-sup--blue {
     background-color: var(--blue-color);
+}
+
+.sidebar-item {
+    padding: 0 4px 50px 4px;
 }
 
 .info__cate {
@@ -309,17 +328,17 @@ html {
 }
 
 .item-content {
-    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .item-content__link {
     text-decoration: none;
     display: block;
     position: relative;
-    height: 232px;
+    height: var(--img-height-small);
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
-    border-radius: 6px;
+    /* border-radius: 6px; */
 }
 
 .item-content__book {
@@ -328,25 +347,27 @@ html {
     border-top: 48px solid #2b44ff;
     border-right: 48px solid #fff;
     top: 100%;
-    right: -14%;
+    right: -48px;
     transition: all 0.25s ease;
+    opacity: 0;
 }
 
 .item-content__link:hover .item-content__book {
     right: 0px;
-    top: 78%;
+    top: calc(var(--img-height-small) - 20%);
     transition: all 0.25s ease;
+    opacity: 1;
 }
 
 .item-content__container-img {
     position: relative;
-    height: 232px;
+    height: 100%;
 }
 
 .item-content__img {
     width: 100%;
+    height: 100%;
     border-radius: 6px;
-    max-height: 232px;
     object-fit: cover;
 }
 
@@ -357,13 +378,20 @@ html {
     z-index: 1;
     top: 26px;
     right: 26px;
-    background-color: #2b44ff;
     line-height: 34px;
     width: 38px;
     text-align: center;
     border-radius: 50%;
     border: 2px solid var(--white-color);
     font-weight: 600;
+}
+
+.item-content__rate--darkblue {
+    background-color: #2b44ff;
+}
+
+.item-content__rate--violet {
+    background-color: #6641DB;
 }
 
 .item-content__overlay {

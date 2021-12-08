@@ -334,9 +334,7 @@
     width: 23%;
 }
 
-.sidebar-item {
-    padding: 0 4px 50px 4px;
-}
+
 
 
 
@@ -492,7 +490,7 @@
 
 /* Content */
 .content {
-    height: 6000px;
+    height: 10000px;
 }
 
 .content__tag-info {
@@ -633,19 +631,19 @@
 .content-technology__title {
 }
 
-.content__title-main {
+.content-title__main {
     font-size: 3rem;
     font-weight: 800;
     margin: 0;
     line-height: 3rem;
 }
 
-.content__title-desc {
+.content-title__desc {
     font-size: 1.2rem;
-    font-weight: normal;
     text-transform: uppercase;
     color: var(--text-color);
     margin: 6px 0 0 0;
+    font-weight: 700;
 }
 
 /* img overlay book */
@@ -663,16 +661,17 @@
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 86px;
     margin-bottom: 60px;
 }
 
 .content-today-highlight { 
     background-color: #f5f5f5;
+    padding: 40px;
+    margin-bottom: 60px;
 }
 
-.content-today {
-    padding-top: 40px;
+.content-title-desc {
+    margin-bottom: 40px;
 }
 
 .content-today__title {
@@ -680,5 +679,208 @@
 }
 
 .today-highlight-container {
-    padding: 0 40px;
+}
+
+/* art & culture */
+.post-item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.post-item__img-icon {
+    position: relative;
+}
+
+.post-item__container-img {
+    position: relative;
+    height: 456px;
+}
+
+.post-item__img {
+    width: 100%;
+    height: 456px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.post-item__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 0.2s ease;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.post-item:hover .post-item__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.post-item__icon {
+    display: flex;
+    height: 38px;
+    width: 38px;
+    background-color: #fff;
+    font-size: 1.6rem;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: 25px;
+    right: 25px;
+}
+
+.post-item__icon-img {
+    margin: auto;
+}
+
+.post-item__info {
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.post-item__info:hover .info-with-desc {
+    padding-bottom: 20px;
+}
+
+.post-item__info-link {
+    font-size: 3rem;
+    color: var(--white-color);
+    line-height: 3.7rem;
+    display: inline-block;
+    max-width: 464px;
+}
+
+.post-item__info-size-m {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}
+
+.post-info__date {
+    color: var(--white-color);
+}
+
+.post-info__dot {
+    border-color: #fff;
+}
+
+/* Selected */
+
+.content-selected {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 46px;
+    margin-bottom: 60px;
+}
+
+.selected-content__link {
+    height: var(--img-height-big);
+}
+
+.selected-content__link:hover .selected-content__book {
+    top: calc(var(--img-height-big) - 8%);
+}
+
+.post__title-link {
+    font-size: 3rem;
+}
+
+.post-info__title-link {
+
+}
+
+.post-info__title-link:hover {
+    color: var(--hover-color);
+}
+
+.item-small {
+    padding: 0 0 0 30px;
+    margin-bottom: 30px;
+}
+
+/* Travel */
+
+.travel-message {
+    text-align: center;
+}
+
+.travel-message__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 3.7rem;
+    margin-bottom: 10px;
+}
+
+.travel-message__desc {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    line-height: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.travel-message__btn {
+
+}
+
+/* Send mail */
+.content-sendmail {
+    background-image: url(https://wp.wp-preview.com/inhype/inhype-1/wp-content/uploads/2019/11/inhype1-photos-13.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center center;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.send-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 318px;
+    border-radius: 8px;
+}
+
+.send-mail__title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white-color);
+    line-height: 3.7rem;
+    margin-bottom: 20px;
+}
+
+.send-mail__form {
+
+}
+
+.send-mail__input-btn {
+
+}
+
+.send-mail__input {
+    height: 46px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    width: 300px;
+    font-size: 1.4rem;
+    padding: 8px 20px;
+    margin-right: 15px;
+}
+
+.send-mail__desc {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    font-weight: 600;
+    line-height: 2rem;
+    margin-top: 30px;
 }
