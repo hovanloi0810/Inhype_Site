@@ -74,6 +74,17 @@ html {
     background-color: var(--button-color);
 }
 
+.btn--white {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+.btn--white:hover {
+    background-color: var(--white-color);
+    color: var(--hover-color);
+
+}
+
 .btn-sup {
     font-size: 1rem;
     line-height: 1.8rem;
@@ -330,6 +341,7 @@ html {
 .item-content {
     margin-bottom: 40px;
 }
+
 .item-content__link {
     text-decoration: none;
     display: block;
@@ -338,7 +350,6 @@ html {
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
-    /* border-radius: 6px; */
 }
 
 .item-content__book {
