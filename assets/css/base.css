@@ -350,6 +350,7 @@ html {
     width: 100%;
     overflow: hidden;
     margin-bottom: 30px;
+    border-radius: 6px;
 }
 
 .item-content__book {

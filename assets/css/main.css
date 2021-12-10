@@ -946,6 +946,10 @@
 }
 
 /* Categories */
+.content-categories {
+    margin-bottom: 60px;
+}
+
 .categories-item {
     position: relative;
     height: 280px;
@@ -1011,4 +1015,114 @@
 .categories-item__info-btn {
     position: relative;
     top: 106px;
+}
+
+/* More from InHype */
+.content-morefrom {
+    background-color: #13181C;
+    padding: 100px 100px 50px 100px;
+}
+
+.morefrom-main {
+
+}
+
+.morefrom-item__info {
+
+}
+
+.morefrom-info__title-link {
+    font-size: 2.2rem;
+}
+
+.morefrom-item {
+
+}
+
+.morefrom-item__title {
+    margin-bottom: 60px;
+    padding-bottom: 15px;
+}
+
+.morefrom-icons {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+    bottom: 80px;
+}
+
+.morefrom-icons__left {
+    margin-right: 10px;
+}
+
+.morefrom-icons__left:hover {
+    background-color: #48494b;
+}
+.morefrom-right:hover {
+    background-color: #48494b;
+}
+
+.morefrom-icons__left,
+.morefrom-icons__right {
+    color: var(--white-color);
+    background: rgba(255,255,255,0.2);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    border-radius: 50%;
+}
+
+.morefrom-icon__right,
+.morefrom-icon__left {
+    margin: auto;
+    font-size: 1.6rem;
+}
+
+.morefrom-textcolor {
+    color: var(--white-color);
+}
+
+.morefrom-item__container-img {
+
+}
+
+.morefrom-item__img {
+    border-radius: 6px;
+}
+
+.morefrom-item__overlay {
+
+}
+
+.morefrom-item__book {
+
+}
+
+.morefrom-content__link {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.morefrom-content__book {
+    display: block;
+    position: absolute;
+    border-top: 48px solid #2b44ff;
+    border-right: 48px solid #fff;
+    top: 100%;
+    right: -48px;
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.morefrom-content__link:hover .morefrom-content__book {
+    right: 0px;
+    top: calc(340px - 14%);
+    transition: all 0.25s ease;
+    opacity: 1;
 }
