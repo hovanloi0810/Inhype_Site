@@ -6,8 +6,9 @@
     --pink-color: #ff3366;
     --blue-color: #2b44ff;
     --button-color: #2668ef;
+    --border-color-grey: #e0dede;
+    --border-color-darkgrey: #d9d9d9;
     --slider-height: 640px;
-    --border-color: #e0dede;
     --img-height-big: 568px;
     --img-height-small: 232px;
 }
@@ -43,6 +44,10 @@ html {
     margin-top: 40px;
 }
 
+.p-l-30 {
+    padding-left: 30;
+}
+
 .btn {
     height: 46px;
     text-decoration: none;
@@ -54,7 +59,7 @@ html {
     justify-content: center;
     border: none;
     outline: none;
-    min-width: 134px;
+    min-width: 110px;
     border-radius: 6px;
     padding: 12px 30px;
     transition: .3s;
@@ -209,7 +214,7 @@ html {
 }
 
 .img-item__img {
-    height: 160px;
+    height: 100%;
     width: 100%;
     border-radius: 6px;
 }
@@ -270,6 +275,11 @@ html {
     align-items: center;
 }
 
+.tag-info__center {
+    justify-content: center;
+    text-align: center;
+}
+
 .tag-info__date--slide {
     color: var(--white-color);
     line-height: 2.1rem;
@@ -327,11 +337,16 @@ html {
     margin-bottom: 8px;
     line-height: 2.7rem;
     display: block;
-    width: 96%;
+    width: 100%;
 }
 
 .info__title-link:hover {
     color: var(--hover-color);
+}
+
+.info__title-big {
+    font-size: 3rem;
+    line-height: 3.7rem;
 }
 
 .info__title-link--white {
@@ -426,7 +441,7 @@ html {
 
 .item-content__desc {
     font-size: 1.6rem;
-    margin-top: 10px;
+    margin-top: 16px;
     line-height: 2.6rem;
     color: var(--text-color);
 }
