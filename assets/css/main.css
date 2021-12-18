@@ -16,6 +16,10 @@
     padding: 15px 0;
 }
 
+.banner-site2 {
+    background-image: linear-gradient(to right, #ee2449 0%, #ee3c24 100%);
+}
+
 .content-left {
     margin: 0 10px;
     background: #4CC493;
